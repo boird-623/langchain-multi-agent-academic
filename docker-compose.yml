@@ -1,0 +1,9 @@
+version: "3.8"
+services:
+  app:
+    build: .
+    ports:
+      - "7860:7860"
+    environment:
+      - DEEPSEEK_API_KEY=${DEEPSEEK_API_KEY}
+    restart: always
